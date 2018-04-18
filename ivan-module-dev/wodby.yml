@@ -1,0 +1,10 @@
+pipeline:
+  - name: Run composer install
+    type: command
+    command: composer install --no-dev
+    directory: $APP_ROOT
+  - name: Import configuration
+    type: command
+    command: composer build-wotby
+    directory: $APP_ROOT
+    only_if: test "$WODBY_ENVIRONMENT_TYPE" = "dev"

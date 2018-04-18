@@ -1,0 +1,33 @@
+label: Комментарии
+display:
+  default:
+    display_options:
+      fields:
+        comment_bulk_form:
+          action_title: Действие
+        subject:
+          label: Тема
+        operations:
+          label: Операции
+      filters:
+        subject:
+          expose:
+            label: Тема
+      title: Комментарии
+  page_published:
+    display_options:
+      menu:
+        title: Комментарии
+  page_unapproved:
+    display_options:
+      filters:
+        subject:
+          expose:
+            label: Тема
+      fields:
+        comment_bulk_form:
+          action_title: Действие
+        subject:
+          label: Тема
+        operations:
+          label: Операции
