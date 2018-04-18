@@ -3,3 +3,6 @@ type: module
 description: 'My First Drupal 8 module'
 core: '8.x'
 package: 'My Custom'
+dependencies:
+  - views
+  - book
